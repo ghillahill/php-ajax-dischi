@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <link rel="stylesheet" href="../public/app.css">
         <title></title>
     </head>
@@ -13,15 +14,18 @@
         <main>
             <div class="container">
                 <div class="card-container">
-                        <div class="card">
-                            <img src="" alt="poster">
-                            <p>Titolo: </p>
-                            <em>Autore: </em>
-                            <small>Anno: </small>
-                        </div>
+
                 </div>
             </div>
         </main>
+        <script id="cards-template" type="text/x-handlebars-template">
+            <div class="card">
+                <img src="{{ poster }}" alt="poster">
+                <p>Titolo: {{ title }}</p>
+                <em>Autore: {{ author }}</em>
+                <small>Anno: {{ year }}</small>
+            </div>
+        </script>
         <script src="../public/app.js" charset="utf-8"></script>
     </body>
 </html>
