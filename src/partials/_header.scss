@@ -1,0 +1,8 @@
+header {
+    background-color: $header_background_color;
+    color: $header_text_color;
+}
+
+h1 {
+    @include flex(row, center, center);
+}

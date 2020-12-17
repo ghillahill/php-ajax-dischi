@@ -4,12 +4,14 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="php-ajax-dischi/public/app.css">
+        <link rel="stylesheet" href="../public/app.css">
         <title></title>
     </head>
     <body>
         <header>
-
+            <div class="container">
+                <h1>PHP Dischi</h1>
+            </div>
         </header>
         <main>
             <div class="container">

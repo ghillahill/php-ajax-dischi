@@ -1,5 +1,20 @@
-@mixin flex($direction, $wrap) {
+@mixin simpleFlex($direction, $wrap) {
     display: flex;
     flex-direction: $direction;
     flex-wrap: $wrap;
+}
+
+@mixin flex($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin card() {
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    background-color: darkgrey;
+    border-radius: 5px;
 }

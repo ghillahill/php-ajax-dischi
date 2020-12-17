@@ -1,8 +1,15 @@
+main {
+    background-color: $main_background_color;
+}
+
 .card-container {
-    @include flex(row, wrap);
+    @include simpleFlex(row, wrap);
 }
 
 .card {
-    width: 250px;
-    padding: 20px;
+    @include card;
+}
+
+.card img {
+    max-width: $main_card_img_size;
 }
