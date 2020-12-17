@@ -73,4 +73,8 @@ $dischi = [
     ]
 ];
 
+header('COntet-Type: application/json');
+
+echo json_encode($dischi);
+
 ?>
