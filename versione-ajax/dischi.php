@@ -88,10 +88,10 @@ if (!empty($_GET)) {
             //aggiungo genere dentro nuovo array
             $filtered_disks[] = $disco;
         }
-        else {
-            //scarto
-        }
     }
+}
+else {
+    $filtered_disks = $dischi;
 }
 
 
