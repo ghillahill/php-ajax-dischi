@@ -73,8 +73,30 @@ $dischi = [
     ]
 ];
 
+
+if (!empty($_GET)) {
+    //Prendo il parametro GET genre dall'array dischi.
+    $genre = $_GET['genre'];
+
+    //Creo array vuoi dove aggiungere i genres presi dal comando GET
+    $filtered_disks = [];
+
+    //ciclo tutti i disks
+    foreach ($dischi as $disco) {
+        if ($disco['genre'] == $genre) {
+
+            //aggiungo genere dentro nuovo array
+            $filtered_disks[] = $disco;
+        }
+        else {
+            //scarto
+        }
+    }
+}
+
+
+
 header('Content-Type: application/json');
 
-echo json_encode($dischi);
-
+echo json_encode($filtered_disks);
 ?>
