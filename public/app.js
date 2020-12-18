@@ -114,6 +114,10 @@ $(document).ready(function () {
     error: function error() {
       console.log('error');
     }
+  }); //Uso jquery per intercettare il cambio di genere su genres-filter
+
+  $('#genres-filter').change(function () {
+    console.log("ok");
   });
 });
 
