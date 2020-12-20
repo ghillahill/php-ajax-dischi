@@ -74,7 +74,7 @@ $dischi = [
 ];
 
 
-if (!empty($_GET)) {
+if (!empty($_GET) && !empty($_GET['genre'])) {
     //Prendo il parametro GET genre dall'array dischi.
     $genre = $_GET['genre'];
 
