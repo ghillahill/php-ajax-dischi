@@ -1,5 +1,17 @@
+.select-filter-box {
+    @include flex(row, center, center);
+    padding: $select_spacing;
+}
+
+.select-filter-box #genres-filter {
+    padding: $select_padding;
+    border: $select_border;
+    border-radius: 3px;
+}
+
 main {
     background-color: $main_background_color;
+    height: 100vh;
 }
 
 .card-container {
@@ -8,6 +20,12 @@ main {
 
 .card {
     @include card;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        transition: 0.5s;
+    }
 }
 
 .card img {

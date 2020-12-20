@@ -1,8 +1,21 @@
 header {
     background-color: $header_background_color;
     color: $header_text_color;
+    padding: $general_padding;
 }
 
-h1 {
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+a h1 {
     @include flex(row, center, center);
+    text-transform: $title_transform;
+
+    &:hover {
+        transform: scale(1.4);
+        color: #fff;
+        transition: 0.4s;
+    }
 }

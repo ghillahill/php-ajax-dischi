@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -12,17 +16,45 @@
 header {
   background-color: grey;
   color: #eee;
+  padding: 35px 0;
 }
 
-h1 {
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+a h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+}
+
+a h1:hover {
+  transform: scale(1.4);
+  color: #fff;
+  transition: 0.4s;
+}
+
+.select-filter-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.select-filter-box #genres-filter {
+  padding: 8px;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
 }
 
 main {
   background-color: black;
+  height: 100vh;
 }
 
 .card-container {
@@ -37,6 +69,12 @@ main {
   margin: 20px;
   background-color: darkgrey;
   border-radius: 5px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .card img {
